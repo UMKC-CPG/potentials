@@ -1,0 +1,11 @@
+title
+TiO2 - Rutile
+end
+cell
+4.59373 4.59373 2.95812 90.0 90.0 90.0
+fractional 2
+Ti 0.00000 0.00000 0.00000
+O  0.30530 0.30530 0.00000
+space 136_a
+supercell 1 1 1
+full

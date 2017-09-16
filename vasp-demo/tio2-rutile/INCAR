@@ -1,0 +1,26 @@
+System = empty
+
+ISMEAR = 0
+
+PREC  = Low       ! low, medium, normal are other options. Use suitable one.
+ENCUT = 600 eV    ! Decide considering the crystal size and accuracy you want.
+EDIFF = 1.0E-5    ! Enegy difference coverg. limit for electronic optimization.
+EDIFFG = -1.0E-3  ! Enegy difference covergence limit for ionic optimization.
+
+IBRION = 0        ! 0 for MD, 1 best, 2 for diff relax.
+NSW    = 10       ! Total number of ionic steps.
+ISIF   = 0        ! Ion(0-4) vol(3,6,7) shape(3-6) nostress(0,1(trace only))
+
+LREAL  = Auto     ! Proj. on real space. use FALSE (default) for recip space.
+NPAR   = 4        ! Best sqrt of NCPUs used. should be >= NCPUs/32.
+ALGO   = Fast     ! default is Normal.
+LCHARG = .FALSE.  ! Do not print the CHGCAR.
+LWAVE  = .FALSE.  ! Do not print the WAVCAR.
+ISYM = 0          ! No symmetry assist possible because doing AIMD
+NELMIN=4          ! Min of 4 el. steps between ionic steps. Why 4? Dunno.
+
+SMASS=1           ! Unknown number
+NBLOCK=1          ! Write positions and forces and DOS every step.
+POTIM=1.5         ! 1.5 Femtosecond time step
+TEBEG=300         ! Start Temp
+TEND=300          ! End Temp
