@@ -11,8 +11,6 @@ if [ -d $BUILD_DIR ]; then
   rm -rf $BUILD_DIR
 fi
 
-CURR_DIR=`pwd`
-
 git clone $POTFIT_REPO $BUILD_DIR
 cd $BUILD_DIR
 git checkout tags/$POTFIT_RELEASE
