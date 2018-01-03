@@ -28,6 +28,8 @@ sed -i.bak -e 's/mpicc/mpiicc/' -e 's/^BIN_DIR/#&/' Makefile
 
 module load intel
 
+unset BIN_DIR
+
 make ${POT_OPTION}
 cp ${POT_OPTION} ${JOB_DIR}
 cd ${JOB_DIR}
