@@ -20,11 +20,11 @@ if [ -d ${BUILD_DIR} ]; then
     rm -rf ${BUILD_DIR}
 fi
 
-git clone ${POTFIT_REPO } ${BUILD_DIR}
+git clone ${POTFIT_REPO} ${BUILD_DIR}
 cd ${BUILD_DIR}
 git checkout tags/${POTFIT_RELEASE}
 
-sed -i .bak -e 's/mpicc/mpiicc/' -e 's/^BIN_DIR/#&/' Makefile
+sed -i.bak -e 's/mpicc/mpiicc/' -e 's/^BIN_DIR/#&/' Makefile
 
 module load intel
 
